@@ -1,0 +1,52 @@
+.firsBlock, .secondBlock{
+    border: 2pt #444 solid;
+    border-radius: 1rem; 
+    padding: 1rem 2rem 1rem 2rem;  
+    margin: 1rem;
+    color:white;
+    width: 65%;
+}
+
+
+ul#formtAdmitidos, ol#docsDetectados{
+    counter-reset:li;
+    padding: 0%;
+    margin: 0%;
+    font-size: 13px;
+}
+
+#formtAdmitidos li, #docsDetectados li{
+    border-radius: 2rem; 
+    margin-bottom: .5rem;
+    position: relative;
+    display: block;
+    background: rgba(48, 86, 67, 0.133);
+    text-decoration: none;
+    transition: all .3s ease-out;
+    width: 75%;
+}
+
+#docsDetectados li:hover, #formtAdmitidos li:hover{
+    background: #eee;
+    color: #444;
+    font-size: 15px;
+} 
+
+#docsDetectados li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -2em;
+    top: 50%;
+    margin-top: -1em;
+    background: #696a6b;
+    height: 2em;
+    width: 2em;
+    line-height: 1.5em;
+    border: .3em solid #444;
+    text-align: center;
+    font-weight: bold;
+    font-size: 11px;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}

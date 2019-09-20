@@ -1,0 +1,13 @@
+.docExample {
+    position: absolute;
+    z-index: 1;
+    width: 400px;
+    height: 300px;
+    border-radius: 50px 50px 50px 50px;
+    display: none;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 82%;
+    top: 10%;
+  }
